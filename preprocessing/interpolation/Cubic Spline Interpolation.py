@@ -3,6 +3,7 @@ import numpy as np
 from scipy.interpolate import CubicSpline
 import matplotlib.pyplot as plt
 #"df" refers to the dataframe obtained after importing an Excel file
+df=pd.read_excel("./data.xlsx")
 def cubic_spline_interpolation(df):
     #Retrieve columns A and B of the data and convert them into a Numpy array
     #Column A is x, and column B is y. Column A must be strictly increasing. If column A is not strictly increasing, the data must be sorted first. (If column A contains time-type data, you can convert the time-type data to timestamps before performing interpolation processing)
